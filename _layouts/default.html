@@ -7,19 +7,26 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
   <body>
-    <header>
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-      </nav>
+    <header class="site-header">
+      <div class="site-wrapper">
+        <div class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
+        <nav>
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/research/' | relative_url }}">Research</a>
+          <a href="{{ '/projects/' | relative_url }}">Projects</a>
+          <a href="{{ '/talks/' | relative_url }}">Talks</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      {{ content }}
+      <div class="site-wrapper">
+        {{ content }}
+      </div>
     </main>
 
-    <footer>
-      <p>{{ site.description }}</p>
+    <footer class="site-footer">
+      <div class="site-wrapper">{{ site.description }}</div>
     </footer>
   </body>
 </html>
