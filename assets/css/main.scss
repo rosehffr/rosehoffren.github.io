@@ -1,1 +1,57 @@
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/* Base */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #222;
+  background: #fff;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+header, main, footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+header h1 a {
+  color: #222;
+  font-size: 1.4rem;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #eee;
+  color: #888;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
