@@ -3,6 +3,12 @@ layout: default
 title: Home
 ---
 
-# Welcome
+<div class="page-header">
+  <h1>Your Name</h1>
+  <p>Physics & Astronomy @ Stony Brook · Computational Astrophysics Research</p>
+</div>
 
-Hi.
+<div class="section">
+  <div class="section-title">About</div>
+  <p>A short intro about yourself here.</p>
+</div>
