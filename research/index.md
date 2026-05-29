@@ -5,7 +5,7 @@ title: Research
 
 <div class="page-header">
   <h1>Research</h1>
-  <p>My work spans computational and experimental nuclear astrophysics. When it comes to my computational research, I blow up a bunch of stars! I study the double-detonation method of Type Ia supernovae, specifically focusing on the explodability of oxygen-neon white dwarfs. My experimental work on the other hand is very hardware focused. I am continuing the work of a previous student on a Pick 'n Place machine which is essentially a 3D printer for assembling PCB circuits. I am also working on a program that connects to the amplifiers of old DarkLight scintillators.</p>
+  <p>My work spans computational and experimental nuclear physics. When it comes to my computational research, I blow up a bunch of stars! I study the double-detonation method of Type Ia supernovae, specifically focusing on the explodability of oxygen-neon white dwarfs. My experimental work on the other hand is very hardware focused. I am continuing the work of a previous student on a Pick 'n Place machine which is essentially a 3D printer for assembling PCB circuits. I am also working on a program that connects to the amplifiers of old DarkLight scintillators.</p>
 </div>
 
 <div class="section">
@@ -36,15 +36,12 @@ title: Research
     <p> WIP</p>
     <div class="meta">
       <span class="tag">Hardware</span>
-      <span class="tag">KiCad</span>
     </div>
   </div>
   <div class="card">
     <h3><a href="{{ '/research/experimental-nuclear-physics/scintillator-amplifiers/' | relative_url }}">Scintillator Amplifiers</a></h3>
     <p>WIP</p>
     <div class="meta">
-      <span class="tag">PCB Design</span>
-      <span class="tag">LTspice</span>
     </div>
   </div>
 </div>
