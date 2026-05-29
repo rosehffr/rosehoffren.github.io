@@ -7,32 +7,50 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-wrapper">
-        <div class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
-    <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <div class="nav-dropdown">
-          <a href="{{ '/research/' | relative_url }}">Research</a>
-          <div class="dropdown-menu">
-            <a href="{{ '/research/computational-astrophysics/' | relative_url }}">Computational Astrophysics</a>
-            <a href="{{ '/research/nuclear-astrophysics/' | relative_url }}">Experimental Nuclear Physics</a>
+    <div class="layout">
+
+      <aside class="sidebar">
+        <div class="sidebar-inner">
+          <div class="sidebar-profile">
+            <div class="avatar">RH</div>
+            <h1 class="sidebar-name">{{ site.title }}</h1>
+            <p class="sidebar-bio">{{ site.description }}</p>
+          </div>
+
+          <nav class="sidebar-nav">
+            <a href="{{ '/' | relative_url }}" class="nav-item">Home</a>
+
+            <div class="nav-dropdown">
+              <span class="nav-item nav-parent">Research <span class="arrow">›</span></span>
+              <div class="dropdown-menu">
+                <a href="{{ '/research/white-dwarfs/' | relative_url }}">White Dwarfs</a>
+                <a href="{{ '/research/nuclear-astrophysics/' | relative_url }}">Nuclear Astrophysics</a>
+              </div>
+            </div>
+
+            <div class="nav-dropdown">
+              <span class="nav-item nav-parent">Projects <span class="arrow">›</span></span>
+              <div class="dropdown-menu">
+                <a href="{{ '/projects/computational/' | relative_url }}">Computational</a>
+                <a href="{{ '/projects/hardware/' | relative_url }}">Hardware</a>
+                <a href="{{ '/projects/hobbies/' | relative_url }}">Hobbies</a>
+              </div>
+            </div>
+
+            <a href="{{ '/talks/' | relative_url }}" class="nav-item">Talks</a>
+          </nav>
+
+          <div class="sidebar-links">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="mailto:you@email.com">Email</a>
+          </div>
         </div>
-  </div>
-  <a href="{{ '/projects/' | relative_url }}">Projects</a>
-  <a href="{{ '/talks/' | relative_url }}">Talks</a>
-</nav>
-      </div>
-    </header>
+      </aside>
 
-    <main>
-      <div class="site-wrapper">
+      <main class="main-content">
         {{ content }}
-      </div>
-    </main>
+      </main>
 
-    <footer class="site-footer">
-      <div class="site-wrapper">{{ site.description }}</div>
-    </footer>
+    </div>
   </body>
 </html>
