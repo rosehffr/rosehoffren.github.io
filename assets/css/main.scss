@@ -144,3 +144,45 @@ main { padding-bottom: 4rem; }
   color: var(--text-muted);
   font-size: 0.85rem;
 }
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown > a::after {
+  content: " ↓";
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  min-width: 180px;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  color: var(--blue-dark);
+  background: var(--blue-light);
+  text-decoration: none;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  display: block;
+}
