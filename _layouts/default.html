@@ -20,25 +20,35 @@
           <nav class="sidebar-nav">
             <a href="{{ '/' | relative_url }}" class="nav-item">Home</a>
 
+            <a href="{{ '/about-me/' | relative_url }}" class="nav-item">About Me</a>
+          
+
             <div class="nav-dropdown">
               <span class="nav-item nav-parent">Research <span class="arrow">›</span></span>
               <div class="dropdown-menu">
-                <a href="{{ '/research/white-dwarfs/' | relative_url }}">White Dwarfs</a>
                 <a href="{{ '/research/nuclear-astrophysics/' | relative_url }}">Nuclear Astrophysics</a>
+                <a href="{{ '/research/experimental-nuclear-physics/' | relative_url }}">Experimental Nuclear Physics</a>
               </div>
             </div>
 
             <div class="nav-dropdown">
               <span class="nav-item nav-parent">Projects <span class="arrow">›</span></span>
               <div class="dropdown-menu">
-                <a href="{{ '/projects/computational/' | relative_url }}">Computational</a>
-                <a href="{{ '/projects/hardware/' | relative_url }}">Hardware</a>
-                <a href="{{ '/projects/hobbies/' | relative_url }}">Hobbies</a>
+                <a href="{{ '/projects/computational/' | relative_url }}">Programming and Software</a>
+                <a href="{{ '/projects/hardware/' | relative_url }}">Other</a>
               </div>
             </div>
-
-            <a href="{{ '/talks/' | relative_url }}" class="nav-item">Talks</a>
-          </nav>
+            
+            <div class="nav-dropdown">
+              <span class="nav-item nav-parent">Talks <span class="arrow">›</span></span>
+              <div class="dropdown-menu">
+                <a href="{{ '/talks/asny-fall-2025/' | relative_url }}">ASNY Fall 2025</a>
+                <a href="{{ '/projects/sbu-colloquium/' | relative_url }}">SBU Departmental Colloquium</a>
+                <a href="{{ '/talks/upard/' | relative_url }}">SBU UPARD<a/>
+                <a href="{{ '/talks/wise-symposium/' | relative_url }}">WISE Honors Symposium</a>
+                <a href="{{ '/talks/ureca-posters/' | relative_url }}">URECA Research Showcase</a>
+              </div>
+            </div>
 
           <div class="sidebar-links">
             <a href="https://github.com/" target="_blank">GitHub</a>
